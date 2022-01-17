@@ -30,4 +30,12 @@ router.route('/add').post((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+// get a specific order 
+router.route('/:id').get((req, res) => {
+  Order.findById(req.params.id)
+    .then(orders => res.json(orders))
+    .catch(err => res.status(400).json('Error: ' + err));
+  console.log(req.params.id)
+});
+
 module.exports = router;

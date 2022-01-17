@@ -6,13 +6,21 @@ import 'bootstrap/dist/css/bootstrap.css';
 // make each order component
 
 const Order = props => (
-    <tr>
-      <td>{props.order.Name}</td>
-      <td>{props.order.Address}</td>
-      <td>{props.order.Item_Name}</td>
-      <td>{props.order.Item_Price}</td>
-      <td>{props.order.Item_Size}</td>
-    </tr>
+
+// link to new page, passes object _id to the page
+
+    <Link to={props.order._id}>
+        <br></br>
+        <button type="button" className="btn btn-light">
+            <div>{props.order.Name}</div>
+            <div>{props.order.Address}</div>
+            <div>{props.order.Item_Name}</div>
+            <div>{props.order.Item_Price}</div>
+            <div>{props.order.Item_Size}</div>
+        </button>
+        <br></br>
+        <br></br>
+    </Link>
   )
 
 // load all of the orders 
@@ -42,23 +50,10 @@ export default class OrderList extends Component {
 
     render () {
         return (
-            <div>
-        <h3>Current Orders</h3>
-        <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Name</th>
-              <th>Address</th>
-              <th>Item</th>
-              <th>Price</th>
-              <th>Size</th>
-            </tr>
-          </thead>
-          <tbody>
-            { this.OrderList() }
-          </tbody>
-        </table>
-      </div>
+            <div className="m-3">
+                <h2>Current Orders</h2>
+                { this.OrderList() }
+            </div>
         );
     }
 }
