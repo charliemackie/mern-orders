@@ -21,8 +21,10 @@ connection.once('open', () => {
 
 // Routes
 const orderRouter = require('./routes/order');
+const labelRouter = require('./routes/shippingLabel');
 
 app.use('/order', orderRouter);
+app.use('/label', labelRouter);
 
 // Create Server
 app.listen(port, () => {

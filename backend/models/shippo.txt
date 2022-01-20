@@ -1,0 +1,40 @@
+// var shippo = require('shippo')('shippo_test_e600179bcc0404140c9e79693767c18c916d4c95');
+
+    //     // var addressFrom  = {
+    //     //     "name": "Frate",
+    //     //     "street1": "180 St George St",
+    //     //     "city": "London",
+    //     //     "province": "ON",
+    //     //     "postalCode": "N6A 3A4",
+    //     //     "country": "CA"
+    //     // };
+
+    //     // var addressTo = {
+    //     //     "name": order.Name,
+    //     //     "street1": order.Address,
+    //     //     "city": order.Address,
+    //     //     "state": order.Address,
+    //     //     "zip": order.Address,
+    //     //     "country": order.Address
+    //     // };
+
+    //     // var parcel = {
+    //     //     "length": "5",
+    //     //     "width": "5",
+    //     //     "height": "5",
+    //     //     "distance_unit": "in",
+    //     //     "weight": "2",
+    //     //     "mass_unit": "lb"
+    //     // };
+
+    //     // shippo.shipment.create({
+    //     //     "address_from": addressFrom,
+    //     //     "address_to": addressTo,
+    //     //     "parcels": [parcel],
+    //     //     "async": false
+    //     // }, function(err, shipment){
+    //     //     console.log(shipment)
+    //     // });
+    // }
+    // //get order model info, call create label with object
+    // getOrderInfo(id, createLabel);
